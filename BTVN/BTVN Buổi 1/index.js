@@ -1,7 +1,7 @@
-let searchText = document.getElementById('fcountry').value;
 let searchBtn = document.getElementById('button1').addEventListener('click', myFunction());
 
 async function myFunction() {
+    const searchText = document.getElementById('country').value;
     const options = {
         method: 'GET',
         headers: {
@@ -14,4 +14,6 @@ async function myFunction() {
         .then(response => response.json())
         .then(response => console.log(response))
         .catch(err => console.error(err));
+        document.getElementById("country").value = "";
 }
+
