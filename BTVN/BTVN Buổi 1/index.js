@@ -1,5 +1,3 @@
-let searchBtn = document.getElementById('button1').addEventListener('click', myFunction());
-
 async function myFunction() {
     const searchText = document.getElementById('country').value;
     const options = {
@@ -20,12 +18,13 @@ async function myFunction() {
       })
       .then(data => {
         console.log(data);
-        displayinformation(data)
+        displayinformation(data.data)
       })
       .catch((error) => console.error("FETCH ERROR:", error));
     document.getElementById("country").value = "";
     
 }
+
 
 function displayinformation(data) {
     const comfirmed1 = data.confirmed;
