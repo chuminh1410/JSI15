@@ -9,31 +9,32 @@ async function myFunction() {
     };
 
     await fetch(`https://covid-19-coronavirus-statistics.p.rapidapi.com/v1/total?country=${searchText}`, options)
-    .then((response) => {
-        if (response.ok) {
-          return response.json();
-        } else {
-          throw new Error("NETWORK RESPONSE ERROR");
-        }
-      })
-      .then(data => {
-        console.log(data);
-        displayinformation(data.data)
-      })
-      .catch((error) => console.error("FETCH ERROR:", error));
+        .then((response) => {
+            if (response.ok) {
+                return response.json();
+            } else {
+                throw new Error("NETWORK RESPONSE ERROR");
+            }
+        })
+        .then(data => {
+            console.log(data);
+            displayinformation(data.data)
+        })
+        .catch((error) => console.error("FETCH ERROR:", error));
     document.getElementById("country").value = "";
-    
+
 }
 
 
 function displayinformation(data) {
+    
     const comfirmed1 = data.confirmed;
     const deaths1 = data.deaths;
     const last_checked1 = data.lastChecked;
     const last_report1 = data.lastReported;
     const location1 = data.location;
     const recovered1 = data.recovered;
-    
+
     const div1 = document.getElementById("return_1");
     const div2 = document.getElementById("return_2");
     const div3 = document.getElementById("return_3");
@@ -66,6 +67,6 @@ function displayinformation(data) {
     heading5.innerHTML = recovered1;
     div6.appendChild(heading5);
 
-}   
+}
 
 
