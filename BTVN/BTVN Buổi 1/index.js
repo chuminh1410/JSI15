@@ -28,6 +28,8 @@ async function myFunction() {
 
 function displayinformation(data) {
     
+    
+    
     const comfirmed1 = data.confirmed;
     const deaths1 = data.deaths;
     const last_checked1 = data.lastChecked;
@@ -91,5 +93,3 @@ function displayinformation(data) {
     div6.appendChild(heading5);
 
 }
-
-

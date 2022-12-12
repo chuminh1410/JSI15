@@ -1,17 +1,16 @@
 body{
     background-color: darkgray;
+    font-family: 'PT Sans', sans-serif;
 }
 #title {
     font-size: 60px;
     margin: auto;  
     text-align: center; 
     width: 70%;
-    font-family: 'PT Sans', sans-serif;
     padding: 20px;
 }
 .country1 {
     font-size: 30px;
-    font-family: 'PT Sans', sans-serif;
     margin: auto;
     text-align: center;
 }
