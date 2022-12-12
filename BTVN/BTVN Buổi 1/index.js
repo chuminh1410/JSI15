@@ -28,8 +28,6 @@ async function myFunction() {
 
 function displayinformation(data) {
     
-    
-    
     const comfirmed1 = data.confirmed;
     const deaths1 = data.deaths;
     const last_checked1 = data.lastChecked;
@@ -44,7 +42,7 @@ function displayinformation(data) {
     const div3 = document.getElementById("return_3");
     const div4 = document.getElementById("return_4");
     const div5 = document.getElementById("return_5");
-    const div6 = document.getElementById("return_6");
+    const div6 = document.getElementById("return_6");   
 
     const top = document.createElement("h1");
     top.innerHTML = "Information returned below: ";
