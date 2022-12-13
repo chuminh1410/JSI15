@@ -1,0 +1,41 @@
+Các method mới :
+
+1. Reduce
+
+The reduce() method executes a reducer function for array element.
+
+The reduce() method returns a single value: the function's accumulated result.
+
+The reduce() method does not execute the function for empty array elements.
+
+The reduce() method does not change the original array.
+
+Cách sử dụng :
+
+array.reduce(function(total, currentValue, currentIndex, arr), initialValue)
+
+2. Split
+
+The split() method splits a string into an array of substrings.
+
+The split() method returns the new array.
+
+The split() method does not change the original string.
+
+If (" ") is used as separator, the string is split between words.
+
+Cách sử dụng :
+
+string.split(separator, limit)
+
+3. Slice
+
+The slice() method returns selected elements in an array, as a new array.
+
+The slice() method selects from a given start, up to a (not inclusive) given end.
+
+The slice() method does not change the original array.
+
+Cách sử dụng : 
+
+array.slice(start, end)
