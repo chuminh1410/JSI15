@@ -17,7 +17,10 @@ console.log(newArr);
 m = [1, 2, 4, 5, 6, 7];
 n = [3, 5, 675, 8, 96];
 
-grouped_array = n.slice(0, 5)
+grouped_array = m.filter((item) => {
+  return item != "1", "8","10","96","7";
+})
+
 console.log(grouped_array)
 
 // Task 4
