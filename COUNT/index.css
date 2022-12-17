@@ -1,0 +1,19 @@
+.main {
+    margin-top: 50px;
+    width: 120px;
+    height: 60px;
+}
+.main1 {
+    text-align: center;
+    margin-left: 600px;
+    width: 120px;
+    height: 60px;
+    }
+.main2{
+    padding-left: 600px;
+    width: 120px;
+    height: 60px;
+}
+body{
+    font-size: 30px;
+}
