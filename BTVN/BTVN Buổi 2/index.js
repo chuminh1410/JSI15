@@ -13,8 +13,7 @@ const newArr = arr.map(arr => {
 });
 console.log(newArr);
 
-// Task 3 (Chưa Xong)
-
+// Task 3 
 m = [1, 2, 4, 5, 6, 7];
 n = [3, 5, 675, 8, 96];
 
