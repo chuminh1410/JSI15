@@ -1,6 +1,6 @@
 // Task 2
 
-class Clock {
+class ExtendedClock {
     constructor({ template}) {
         this.template = template;
     }
@@ -17,10 +17,14 @@ class Clock {
         let secs = date.getSeconds();
         if (secs < 10) secs = '0' + secs;
 
+        let milsecs = date.getMilliseconds();
+        if (milsecs < 10) milsecs = '0' + milsecs;
+
         let output = this.template
             .replace('h', hours)
             .replace('m', mins)
-            .replace('s', secs);
+            .replace('s', secs)
+            .replace('ms', milsecs)
 
         console.log(output);
     }
@@ -34,3 +38,6 @@ class Clock {
         this.timer = setInterval(() => this.render(), 1000)
     }
 }
+
+var clock = new ExtendedClock({template :'h:m:s:ms'});
+clock.start();  
