@@ -1,17 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <link rel="stylesheet" href="./index.css">
-    
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <form id="signupForm">
+        <fieldset>
+            <legend>Sign-up Form</legend>
+            <p>
+                <label for="firstname">First name</label>
+                <input id="firstname" name="firstname" type="text">
+            </p>
+            <p>
+                <label for="lastname">Last name</label>
+                <input id="lastname" name="lastname" type="text">
+            </p>
+            <p>
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email">
+            </p>
+            <p>
+                <label for="confirm_email">Confirm Email</label>
+                <input id="confirm_email" name="confirm_email" type="email">
+            </p>
+            <p>
+                <label for="agree">Please agree to our policy</label>
+                <input id="checkbox" class="checkbox" name="agree" type="checkbox">
+            </p>
+            <button type="submit">submit</button>
+        </fieldset>
+    </form>
 
 
     <script src="./index.js"></script>
 </body>
+
 </html>

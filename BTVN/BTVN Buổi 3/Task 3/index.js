@@ -1,8 +1,27 @@
 // Task 3
 
-class PhanSo {
-    constructor(tuso, mauso) {
-        this.tuso = tuso;
-        this.mauso = mauso;
+
+
+$("#signupForm").submit(function (event) {
+    event.preventDefault();
+    $("#signupForm2").show("slow");
+    $("#signupForm").hide("fast");
+    const firstname = $("#firstname").val();
+    const lastname = $("#lastname").val();
+
+    const person = new Person(firstname, lastname)
+    person.greet()
+
+});
+
+class Person {
+
+    constructor(firstname, lastname) {
+        this.firstname = firstname;
+        this.lastname = lastname
+    }
+
+    greet() {
+        console.log(`He, I'm ${this.firstname} ${this.lastname}`)
     }
 }
