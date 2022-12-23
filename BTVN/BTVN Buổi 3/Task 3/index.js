@@ -2,26 +2,43 @@
 
 
 
-$("#signupForm").submit(function (event) {
+$("#layso").submit(function (event) {
     event.preventDefault();
-    $("#signupForm2").show("slow");
-    $("#signupForm").hide("fast");
-    const firstname = $("#firstname").val();
-    const lastname = $("#lastname").val();
+    const so_dau = $("#so_dau").val();
+    const so_hai = $("#so_hai").val();
 
-    const person = new Person(firstname, lastname)
-    person.greet()
+    const calculate = new calculate(so_dau, so_hai)
+    calculate.cong()
 
 });
 
-class Person {
+class Calculate {
 
-    constructor(firstname, lastname) {
-        this.firstname = firstname;
-        this.lastname = lastname
+    constructor(so_dau, so_hai, ket_qua) {
+        this.so_dau = so_dau;
+        this.so_hai = so_hai;
+        this.ketqua = ket_qua
     }
 
-    greet() {
-        console.log(`He, I'm ${this.firstname} ${this.lastname}`)
+    cong() {
+        this.ket_qua = this.so_dau + this.so_hai
+        console.log(`He, I'm ${this.ket_qua}`)
     }
+
+    tru() {
+        this.ket_qua = this.so_dau - this.so_hai
+        console.log(`He, I'm ${this.ket_qua}`)
+    }
+
+    nhan() {
+        this.ket_qua = this.so_dau * this.so_hai
+        console.log(`He, I'm ${this.ket_qua}`)
+    }
+
+    chia() {
+        this.ket_qua = this.so_dau / this.so_hai
+        console.log(`He, I'm ${this.ket_qua}`)
+    }
+
+
 }
