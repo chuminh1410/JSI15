@@ -1,16 +1,15 @@
-/*
-*   A simple loading icon based on my 
-*   own logo that I use for reddit and
-*   GitHub. Made entirely with CSS components
-*   with no external resources. Click the
-*   loader to view the original logo.
-*
-*   Yes, it's based on the Photoshop logo.
-*/
+const form = document.querySelector("#student-form");
+const list = document.querySelector("#student-list");
 
-var full=false;
+form.addEventListener("submit", (event) => {
+  event.preventDefault();
 
-function fill(){
-  full=!full;
-  document.getElementById("logocontainer").style.backgroundColor=full?"#3ebffa":"transparent";
-}
+  const name = document.querySelector("#name").value;
+
+  const row = document.createElement("tr");
+  const nameCell = document.createElement("td");
+  nameCell.textContent = name;
+  row.appendChild(nameCell);
+
+  list.appendChild(row);
+});
