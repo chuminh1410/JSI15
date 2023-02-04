@@ -1,0 +1,21 @@
+body {
+    background-image: url("https://doanhnghiep.quocgiakhoinghiep.vn/wp-content/uploads/2020/10/1594126158307-1577762085284-1571027713600-logo-techkids-moi-7-1-05.png");
+    background-size: cover;
+}
+
+.sign-up-container,
+.sign-in-container {
+    font-size: 30px;
+    display: none;
+    padding: 20px;
+    background-color: rgba(155, 146, 146, 0.8);
+    border-radius: 5%;
+    margin: auto;
+    margin-top: 15%;
+    text-align: center;
+    width: 430px;
+}
+
+.sign-up-container {
+    display: block;
+}
