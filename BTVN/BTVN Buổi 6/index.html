@@ -38,6 +38,22 @@
     <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
     <script src="./index.js"></script>
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-analytics.js";
+        const firebaseConfig = {
+          apiKey: "AIzaSyDrKE5qjjJ0Q1O3xF2PnnzHmKgZUwUv5nw",
+          authDomain: "login-create-account-342fa.firebaseapp.com",
+          projectId: "login-create-account-342fa",
+          storageBucket: "login-create-account-342fa.appspot.com",
+          messagingSenderId: "691987920915",
+          appId: "1:691987920915:web:34a4171cb5fbe3efca27e6",
+          measurementId: "G-C23QH1JNR7"
+        };
+      
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+      </script>
 
 </body>
 

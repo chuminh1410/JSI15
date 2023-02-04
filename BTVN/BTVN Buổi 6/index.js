@@ -1,3 +1,4 @@
+
 class User {
     constructor(name, email, password) {
         this.name = name;
@@ -63,5 +64,23 @@ window.addEventListener("load", () => {
     }
 });
 
+import { getAuth, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-auth.js";
 
+const auth = getAuth();
 
+function submit() {
+    email = document.getElementById("email").value;
+    password = focument.getElementById("password").value
+    signInWithEmailAndPassword(auth, email, password)
+        .then((userCredential) => {
+            // Signed in sucess
+            const user = userCredential.user;
+            console.log(user)
+            // ...
+        })
+        .catch((error) => {
+            const errorCode = error.code;
+            const errorMessage = error.message;
+        });
+}
+document.getElementById("sign-in-btn").addEventListener('click', sumbit)
