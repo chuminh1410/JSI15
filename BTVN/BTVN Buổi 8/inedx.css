@@ -1,0 +1,28 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    margin-top: 0;
+}
+
+.clock {
+    display: flex;
+    margin: 20px;
+}
+
+.all {
+    display: flex;
+    margin: 20px;
+}
+
+.clock label {
+    font-size: 30px;
+    display: block;
+}
+
+.clock button {
+    font-size: 20px;
+    margin: 5px;
+}
